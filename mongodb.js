@@ -13,11 +13,18 @@ const courseSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        minLength: 2,
+        minLength: 5,
         maxLength: 255,
         // match: /pattern/,
     },
-    category: { type: String, required: true, enum: ["web", "mobile", "network"] },
+    category: {
+        type: String,
+        required: true,
+        lowercase: true,
+        // uppercase: true,
+        trim: true, // trim spaces around strings
+        enum: ["web", "mobile", "network"],
+    },
     author: String,
     tags: {
         type: Array,
@@ -25,7 +32,7 @@ const courseSchema = new mongoose.Schema({
             validator: async function (v) {
                 // const res = await v && v.length > 0;
                 const res = new Promise((resolve) =>
-                    setTimeout(() => resolve(v && v.length > 0), 3000)
+                    setTimeout(() => resolve(v && v.length > 0), 1000)
                 );
                 return res;
             },
@@ -38,6 +45,8 @@ const courseSchema = new mongoose.Schema({
         type: Number,
         min: 0,
         max: 9999,
+        get: (v) => Math.round(v),
+        set: (v) => Math.round(v),
         required: function () {
             return this.isPublished; // price is required when isPublish is set to true
         },
@@ -48,11 +57,11 @@ const Course = mongoose.model("Course", courseSchema);
 
 const createCourse = async () => {
     const course = new Course({
-        name: "React",
-        author: "Mary2",
-        category: "web",
-        // tags: ["react", "frontend"],
-        tags: null,
+        name: "a",
+        author: "Brown",
+        category: " WEB web  ",
+        tags: ["react", "frontend"],
+        // tags: null,
         isPublished: true,
         price: 20,
     });
@@ -61,10 +70,13 @@ const createCourse = async () => {
         const res = await course.save();
         console.log(res);
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
+        for (field in error.errors) {
+            console.log(error.errors[field].message);
+        }
     }
 };
-createCourse();
+// createCourse();
 
 const getCourses = async () => {
     // Comparison operator
