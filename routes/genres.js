@@ -36,6 +36,7 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
+
     try {
         const genre = await Genre.findByIdAndUpdate(
             { _id: req.params.id },
@@ -45,9 +46,10 @@ router.put("/:id", async (req, res) => {
                 },
             }
         );
+        if (!genre) return res.status(404).send("The genre with given ID was not found.");
+
         const newGenre = await Genre.findById({ _id: req.params.id });
         res.send(newGenre);
-        if (!genre) return res.status(404).send("The genre with given ID was not found.");
     } catch (error) {
         return res.send(error.message);
     }
@@ -57,6 +59,7 @@ router.delete("/:id", async (req, res) => {
     try {
         const genre = await Genre.findByIdAndRemove({ _id: req.params.id });
         if (!genre) return res.status(404).send("The genre with given ID was not found.");
+        
         res.send("The record was deleted successfully");
     } catch (error) {
         res.send(error.message);

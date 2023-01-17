@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Joi = require("joi");
 
-const customersSchema = new mongoose.Schema({
+const customerSchema = new mongoose.Schema({
     name: {
         type: String,
         require: true,
@@ -21,7 +21,7 @@ const customersSchema = new mongoose.Schema({
     },
 });
 
-const Customer = mongoose.model("Customer", customersSchema);
+const Customer = mongoose.model("Customer", customerSchema);
 
 function validateCustomer(genre) {
     const schema = Joi.object({
