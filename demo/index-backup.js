@@ -5,9 +5,9 @@ const morgan = require("morgan");
 const debug = require("debug")("app:startup"); // Debug
 const mongoose = require("mongoose");
 
-const home = require("./routes/home");
-const courses = require("./routes/courses");
-const logger = require("./middleware/logger");
+const home = require("../routes/home");
+const courses = require("../routes/courses");
+const logger = require("../middleware/logger");
 
 mongoose.set("strictQuery", false);
 mongoose
