@@ -3,10 +3,18 @@ const router = express.Router();
 const _ = require("lodash");
 const bcrypt = require("bcrypt");
 const { User, validate, validatePassword } = require("../models/user");
+const auth = require("../middleware/auth");
+const admin = require("../middleware/admin");
 
-router.get("/", async (req, res) => {
+router.get("/", [auth, admin], async (req, res) => {
     const users = await User.find();
     res.send(users);
+});
+
+router.get("/me", auth, async (req, res) => {
+    const userId = req.user._id;
+    const user = await User.findById({ _id: userId }).select("-password");
+    res.send(user);
 });
 
 router.post("/", async (req, res) => {
@@ -26,7 +34,7 @@ router.post("/", async (req, res) => {
 
         const result = await user.save();
 
-        const token = user.generateAuthToken()
+        const token = user.generateAuthToken();
 
         const header = { "x-auth-token": token };
         const data = _.pick(result, ["_id", "username", "email"]);
