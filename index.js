@@ -1,3 +1,4 @@
+require("express-async-errors");
 const dotenv = require("dotenv");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -30,7 +31,7 @@ app.use("/api/rentals", rentals);
 app.use("/api/users", users);
 app.use("/api/auth", auth);
 
-app.use(error)
+app.use(error);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
