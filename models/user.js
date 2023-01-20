@@ -6,10 +6,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const privateKey = process.env.PRIVATE_KEY;
-if (!privateKey) {
-    console.error("FATAL ERROR: PRIVATE_KEY is not defined");
-    process.exit(1);
-}
 
 const userSchema = mongoose.Schema({
     username: {

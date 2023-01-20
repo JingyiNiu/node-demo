@@ -21,7 +21,9 @@
     "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.21",
     "mongoose": "^6.8.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "winston": "^3.8.2",
+    "winston-mongodb": "^5.1.0"
   },
   "devDependencies": {
     "jshint": "^2.13.6"

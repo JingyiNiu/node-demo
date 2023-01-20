@@ -3,10 +3,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const privateKey = process.env.PRIVATE_KEY;
-if (!privateKey) {
-    console.error("FATAL ERROR: PRIVATE_KEY is not defined");
-    process.exit(1);
-}
 
 const auth = (req, res, next) => {
     const token = req.header("x-auth-token");
