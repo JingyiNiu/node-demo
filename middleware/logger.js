@@ -1,6 +1,9 @@
-const log = (req, res, next) => {
-    console.log("Logging...");
-    next();
-};
+const { transports, createLogger, format } = require("winston");
 
-module.exports = log;
+const logger = createLogger({
+    format: format.combine(format.timestamp(), format.json()),
+    transports: [new transports.File({ filename: "logs/logfile.log" })],
+    exceptionHandlers: [new transports.File({ filename: "logs/exceptions.log" })],
+});
+
+module.exports = logger;

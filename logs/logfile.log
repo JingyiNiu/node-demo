@@ -5,3 +5,16 @@
 {"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4d' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-20T00:22:08.912Z"}
 {"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4d' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-24T00:25:30.392Z"}
 {"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4a' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-24T00:25:35.860Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:47:37.717Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:48:01.079Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:50:06.827Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4a' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-24T00:50:24.988Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:51:34.907Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:52:03.624Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:52:08.475Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:52:17.803Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:52:29.468Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:53:00.145Z"}
+{"level":"error","message":"Can not connect to mongoDB...","timestamp":"2023-01-24T00:53:43.644Z"}
+{"level":"error","message":"Unhandled rejection detected... MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-01-24T00:55:05.626Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T00:55:48.991Z"}
