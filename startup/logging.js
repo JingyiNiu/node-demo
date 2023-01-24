@@ -9,7 +9,7 @@ module.exports = () => {
             options: { useUnifiedTopology: true },
         })
     );
-    
+
     process.on("uncaughtException", (error) => {
         logger.log({
             level: "error",
@@ -17,7 +17,7 @@ module.exports = () => {
         });
         process.exit(1);
     });
-    
+
     process.on("unhandledRejection", (error) => {
         logger.log({
             level: "error",
@@ -25,10 +25,9 @@ module.exports = () => {
         });
         process.exit(1);
     });
-    
+
     // Manually create some errors
     // throw new Error("*** Something failed: uncaughtException ***");
     // const promiseError = Promise.reject(new Error("*** Something failed: unhandledRejection ***"));
     // promiseError.then(() => console.log("Done"));
-}
-
+};

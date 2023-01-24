@@ -13,5 +13,5 @@ module.exports = () => {
                 level: "info",
                 message: "Successfully connected to mongoDB...",
             });
-        })
+        });
 };

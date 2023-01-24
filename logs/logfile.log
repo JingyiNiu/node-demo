@@ -109,3 +109,17 @@
 {"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:18:22.533Z"}
 {"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:18:32.462Z"}
 {"level":"error","message":"Unhandled rejection detected... MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-01-24T01:19:02.237Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:19:19.745Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:19:19.807Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:28.645Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:28.676Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:35.581Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:35.614Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:39.449Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:39.482Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:43.733Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:43.766Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:48.747Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:48.779Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-24T01:20:57.023Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-24T01:20:57.067Z"}

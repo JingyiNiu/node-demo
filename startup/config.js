@@ -1,12 +1,10 @@
 const dotenv = require("dotenv");
-require("express-async-errors");
+require("express-async-errors"); // replace try-catch
 
 dotenv.config();
 module.exports = () => {
     const privateKey = process.env.PRIVATE_KEY;
     if (!privateKey) {
-        // console.error("FATAL ERROR: PRIVATE_KEY is not defined");
-        // process.exit(1);
-        throw new Error("FATAL ERROR: PRIVATE_KEY is not defined")
+        throw new Error("FATAL ERROR: PRIVATE_KEY is not defined");
     }
 };
