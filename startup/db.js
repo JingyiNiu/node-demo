@@ -1,5 +1,5 @@
-const logger = require("../middleware/logger");
 const mongoose = require("mongoose");
+const logger = require("../middleware/logger");
 
 module.exports = () => {
     mongoose.set("strictQuery", false);
@@ -13,6 +13,5 @@ module.exports = () => {
                 level: "info",
                 message: "Successfully connected to mongoDB...",
             });
-            console.log("Successfully connected to mongoDB...")
         })
 };

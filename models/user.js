@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
 const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
-dotenv.config();
 
 const privateKey = process.env.PRIVATE_KEY;
 
