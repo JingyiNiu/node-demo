@@ -3,3 +3,5 @@
 {"level":"error","message":"Uncaught exception detected... Error: *** Something failed: uncaughtException ***","timestamp":"2023-01-20T00:21:05.943Z"}
 {"level":"error","message":"unhandled rejection detected... Error: *** Something failed: unhandledRejection ***","timestamp":"2023-01-20T00:21:37.179Z"}
 {"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4d' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-20T00:22:08.912Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4d' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-24T00:25:30.392Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{ _id: '63c4ba293a4695e59189dcb4a' }\" (type Object) at path \"_id\" for model \"Genre\"","timestamp":"2023-01-24T00:25:35.860Z"}
