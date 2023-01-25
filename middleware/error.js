@@ -1,4 +1,3 @@
-const { transports, createLogger, format } = require("winston");
 const logger = require("../middleware/logger");
 
 module.exports = function (error, req, res, next) {
