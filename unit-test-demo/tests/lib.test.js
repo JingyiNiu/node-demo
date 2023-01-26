@@ -86,7 +86,7 @@ describe("registerUser", () => {
 describe("applyDiscount", () => {
     it("should apply 10% discount if customer has more than 10 points", () => {
         db.getCustomerSync = (customerId) => {
-            console.log("Fake reading customer info...");
+            // console.log("Fake reading customer info...");
             return {
                 id: customerId,
                 points: 20,
@@ -102,7 +102,7 @@ describe("applyDiscount", () => {
 describe("notifyCustomer", () => {
     it("should send an email to the customer", () => {
         db.getCustomerSync = (customerId) => {
-            console.log("Fake reading customer info...");
+            // console.log("Fake reading customer info...");
             return {
                 email: "test@email.com",
             };
