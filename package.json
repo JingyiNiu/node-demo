@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --setupFiles dotenv/config"
+    "test": "jest --watchAll --setupFiles dotenv/config --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "jest": "^29.4.0",
-    "jshint": "^2.13.6"
+    "jshint": "^2.13.6",
+    "supertest": "^6.3.3"
   }
 }

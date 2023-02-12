@@ -154,3 +154,27 @@
 {"level":"error","message":"Unhandled rejection detected... MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-01-25T22:41:41.876Z"}
 {"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-25T23:07:25.704Z"}
 {"level":"error","message":"Unhandled rejection detected... MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-01-25T23:07:55.515Z"}
+{"level":"info","message":"Listening on port 6000...","timestamp":"2023-01-26T23:49:36.678Z"}
+{"level":"info","message":"Successfully connected to mongoDB...","timestamp":"2023-01-26T23:49:36.730Z"}
+{"level":"info","message":"Listening on port 6000...","timestamp":"2023-01-26T23:53:03.284Z"}
+{"level":"info","message":"Successfully connected to MongoDB: mongodb://127.0.0.1:27017/vidly...","timestamp":"2023-01-26T23:53:03.315Z"}
+{"level":"info","message":"Listening on port 6000...","timestamp":"2023-01-26T23:53:11.938Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly...","timestamp":"2023-01-26T23:53:11.980Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-26T23:54:16.466Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-01-26T23:54:16.492Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-01-26T23:54:28.837Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly...","timestamp":"2023-01-26T23:54:28.860Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:27:51.975Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:27:52.012Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:50:49.577Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:50:49.607Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:54:50.691Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:54:50.748Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:55:12.015Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:55:12.060Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:55:31.487Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:55:31.521Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:57:41.644Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:57:41.698Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2023-02-12T23:57:53.414Z"}
+{"level":"info","message":"Successfully connected to mongodb://127.0.0.1:27017/vidly_test...","timestamp":"2023-02-12T23:57:53.456Z"}

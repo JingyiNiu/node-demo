@@ -3,15 +3,16 @@ const logger = require("../middleware/logger");
 
 module.exports = () => {
     mongoose.set("strictQuery", false);
+    const currentDB = process.env.NODE_ENV === "test" ? process.env.DB_TEST : process.env.DB;
     mongoose
-        .connect("mongodb://127.0.0.1:27017/vidly", {
+        .connect(`${currentDB}`, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
         .then(() => {
             logger.log({
                 level: "info",
-                message: "Successfully connected to mongoDB...",
+                message: `Successfully connected to ${currentDB}...`,
             });
         });
 };
