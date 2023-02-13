@@ -3,13 +3,14 @@ const router = express.Router();
 const { Genre, validate } = require("../models/genre");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
+const validateObjectId = require("../middleware/validateObjectId");
 
 router.get("/", async (req, res, next) => {
     const genres = await Genre.find().sort({ name: 1 });
     res.send(genres);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async (req, res) => {
     const genre = await Genre.findById({ _id: req.params.id });
     if (!genre) return res.status(404).send("The genre with given ID was not found.");
     res.send(genre);
